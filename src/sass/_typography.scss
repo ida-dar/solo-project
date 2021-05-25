@@ -1,0 +1,12 @@
+section-header {
+  @include header($base-text-color, $base-font-size, $font-normal);
+  text-transform: uppercase;
+}
+
+.subsection-header {
+  @include header($base-text-color, $base-font-size, $font-normal);
+}
+
+.text {
+  @include header($sidebar-dark-color, 14px, $font-light);
+}
