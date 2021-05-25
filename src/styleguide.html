@@ -8,157 +8,171 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="vendor/bootstrap-grid.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="vendor/icons/icon-font/css/Glyphter.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Headers & texts -->
+    <h2 class="section-header">General statistics</h2>
+    <h3 class="subsection-header">Earnings chart</h3>
 
-    <!-- Basic elements -->
-    <h1 style="font-size: 28px;">Lorem ipsum dolor sit amet</h1>
-    <h2 class="page-header" style="margin: 18px; font-size: 16px; color: #e3e3e3; text-transform: uppercase;">Lorem ipsum dolor sit amet</h2>
-    <h3 class="section-header" style="font-size: 16px; font-weight: 600;">Lorem ipsum dolor sit amet</h3>
-    <!-- <h4>Lorem ipsum dolor sit amet</h4>
-    <h5>Lorem ipsum dolor sit amet</h5>
-    <h6>Lorem ipsum dolor sit amet</h6> -->
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia pariatur quidem voluptatem iste perferendis dolorum dolor in voluptates tempore maiores harum assumenda fuga aliquid rerum, amet consectetur error placeat! Repudiandae quisquam deserunt illo at non omnis accusamus dolorem neque voluptates eveniet. Neque aspernatur repudiandae architecto ab inventore, facere nostrum!</p>
 
-    <p style="margin: 0; color: #979797;">Lorem ipsum dolor sit amet <strong>adipiscing elit</strong>. Maecenas blandit <a href="#" style="text-decoration: none; color: #56819f">dignissim</a> Vivamus in consequat nibh.</p>
-    
-    <a href="#" style="text-decoration: none; color: #56819f">Lorem ipsum dolor sit amet</a>
+    <br>
 
-    <ul style="list-style: none; color: #e3e3e3; font-size: 16px;">
-      <li>Lorem ipsum dolor <a href="#" style="text-decoration: none; color: #e3e3e3;">adipiscing elit.</a>.</li>
-      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">adipiscing elit.</a>.</li>
+    <!-- Links -->
+    <a href="#" class="link link-large">http://www.homepage.com</a>
+    <a href="#" class="link link-small">http://www.homepage.com</a>
+    <div href="#" class="link icon-link"><i class="icon-arrow-left"></i></div>
+
+    <i class="icon-links icon-link__color"></i>
+    <i class="icon-trash icon-link__noncolor"></i>
+    <i class="icon-links icon-link__small"></i>
+
+    <br>
+
+    <!-- Buttons -->
+    <button type="button" class="btn btn-default">+ add new</button>
+    <button type="button" class="btn btn-extra-action">Copy link</button>
+
+    <button type="submit" class="btn btn-default">+ add new</button>
+    <button type="submit" class="btn btn-extra-action">Copy link</button>
+
+    <div class="btn btn-refresh icon-large-btn"><i class="icon-refresh"></i></div>
+
+    <br><br>
+
+    <!-- Lists -->
+    <ul class="list one-digit-list">
+      <li><h3 class="list-header">List header</h3><p class="list-text">123</p></li>
     </ul>
-    <ol>
-      <li>Lorem ipsum dolor <a href="#">consectetur adipiscing elit.</a>.</li>
-      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">adipiscing elit.</a></li>
-    </ol>
 
-    <!-- Initial components' markup -->
-    <div class="main-container" style="max-width: 1280px; margin: 0 auto; border: 1px solid red; background-color: #f5f5f2;">
+    <br>
 
-      <div class="container" id="general" style="display: flex; margin: 0; padding: 0;  width: 100%;">
-        
-        <div class="sidebar" style="flex: 1; height: 1740px; max-width: 190px; background-color: #191919;">
-          <div class="logo">
-            <h1>Logo</h1>
-          </div>
+    <!-- Checkbox list -->
+    <div class="checkbox-list">
+      <ul class="list">
+        <li>
+          <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkbox__checkmark"></span>
+            Checkbox
+          </label>
+          <div href="#" class="link icon-link"><i class="icon-show"></i></div>
+        </li>
+        <li>
+          <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkbox__checkmark"></span>
+            Checkbox
+          </label>
+          <div href="#" class="link icon-link"><i class="icon-show"></i></div>
+        </li>
+      </ul>
+    </div>
 
-          <div class="sidebar-nav">
-            <ul>
-              <li><a><img src="vendor/icons/"> General</a></li>
-              <li><a>Details</a></li>
-              <li><a>1</a></li>
-            </ul>
-          </div>
+    <br>
+
+    <!-- Inputs & select -->
+    <!-- TO DO: select -->
+    <select maxheight="-1">
+      <option value="">Select</option>
+      <option value="1">Option 1</option>
+    </select>
+
+    <br><br>
+
+    <form>
+      <div class="form-wrapper">
+        <div class="input-container">
+          <label>Name</label>
+          <input class="form-input" type="text" name="name" placeholder="text">
         </div>
-
-        <div class="display-container" style="flex: 6;">
-          
-          <div class="topbar" style="width: 100%; display: flex; max-height: 60px; width: 100%; display: flex; justify-content: flex-end; align-items: center; background-color: #fff;">
-            <p style="margin: 0; padding: 18px 20px; border-right: 1px solid #979797;"><img src="vendor/icons/wallet.svg" height="15px"> $1500 <img src="vendor/icons/arrow-down-small.svg" height="10px">
-            </p>
-            <table class="table-dropdown-wallet">
-              <tbody>
-                <tr>
-                  <th scope="row" style="width: 100px;">CPA</th>
-                  <td>$1000</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="vendor/icons/notification.svg" style="margin: 24px 20px; height: 15px;">
-            <p style="margin: 24px 20px;"><i class="fas"></i>Leonardo</p>
-            <img src="">
-          </div>
-
-          <div class="content" style="margin: 18px; padding-bottom: 35px; max-width: 1056px; background-color: #fff;">
-
-            <div class="content-header" style="border-bottom: 1px solid #e3e3e3;">
-              <h3>General statistics</h3>
-            </div>
-            
-            <div class="date-selection" style="margin: 0 auto; padding: 35px; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #e3e3e3;">
-              <h3></h3>
-              <p class="current-date" style="padding: 18px 64px 18px 18px; margin: 0;">16.05.2021</p>
-              <p class="date-picker" style="padding: 18px 64px 18px 18px; margin: 0; white-space: nowrap; display: inline-block;">16.05.2021 <i class="fas fa-calendar" style="margin: 0; padding: 0;"></i></p>
-
-              <button class="btn btn-main">Select</button>
-            </div>
-
-            <div class="content-container" style="max-width: 684px; margin: 0 auto;">
-
-              <!-- Buttons -->
-              <button class="btn btn-main" style="color: #fff; padding: 6px 18px; background-color: #f58220; width: fit-content; max-width: 125px; white-space: nowrap;">+ add new</button>
-              <button class="btn btn-additional" style="color:#fff; background-color: #e3e3e3;">Copy link</button>
-
-              <!-- Table-small -->
-              <div class="table-container table-responsive" style="max-width: 684px; margin: 24px auto;">
-                <table class="table table-hover" style="width: 100%;">
-                  <thead>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row" style="width: 250px;">Home page</th>
-                      <td><a>http://www.homepage.com</a></td>
-                      <td class="table-actions"><img src="vendor/icons/links.svg" height="10px" style="margin: 0 20px;"><img src=""></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Home page</th>
-                      <td><a>http://www.homepage.com</a></td>
-                    </tr>
-                    <tr>
-                  </tbody>
-                </table>
-              </div>
-
-            </div>
-
-            <!-- Table-large -->
-            <div class="table-container table-responsive-sm" style="max-width: 1020px; margin: 18px;">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Amount ($)</th>
-                    <th scope="col">Deal</th>
-                    <th scope="col">Account</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Amount ($)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">17/08/02 (12:58)</th>
-                    <td>34,425.00</td>
-                    <td>cpl(200)</td>
-                    <td>bank</td>
-                  </tr>
-                  <tr>
-                </tbody>
-              </table>
-            </div>
-          <div>
-
-          <!-- Pagination -->
-          <div class="col">
-            <div class="pagination" style="margin: 24px auto; justify-content: center; align-items: center;">
-              <a href="#" style="padding: 12px 18px;"><img src="vendor/icons/arrow-left.svg" height="15px"></a>
-              <a href="#" style="padding: 12px 18px; margin: 0; background-color: #f5f5f2;">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#"><img src="vendor/icons/arrow-right.svg" height="15px"></a>
-            </div>
-          </div>
-          
+        <div class="input-container">
+          <label>Required<span class="required-decor">*</span></label>
+          <input class="form-input" type="text" name="name" placeholder="text" required>
+        </div>
+        <div class="input-container">
+          <label class="label-textarea">Please write your message here</label>
+          <textarea class="form-input" type="text" name="name" placeholder="text"></textarea>
         </div>
       </div>
+      <div class="form-btn-container">
+        <button type="submit" class="btn btn-default">+ add new</button>
+      </div>
+    </form>
 
+    <div class="form-wrapper"></div>
+
+
+    <br>
+
+    <!-- Table with link -->
+    <div class="table-container__small table-responsive">
+      <table class="table table__small">
+        <thead></thead>
+        <tbody>
+          <tr>
+            <th scope="col">Table header</th>
+            <td><a href="#" class="link link-large">http://www.homepage.com</a></td>
+            <td class="table-actions">
+              <i class="icon-links icon-link__color"></i>
+              <i class="icon-trash icon-link__noncolor"></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="col">Table header</th>
+            <td><a href="#" class="link link-large">http://www.homepage.com</a></td>
+            <td class="table-actions">
+              <i class="icon-links icon-link__color"></i>
+              <i class="icon-trash icon-link__noncolor"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+
+    <br>
+
+    <!-- Table with sorting, where sorting needs to be done with js -->
+    <div class="table-container__large table-responsive">
+      <table class="table table__large">
+        <thead>
+          <tr>
+            <th scope="col">Initiated date <i class="icon-arrow-down-small icon-link__small table-icon"></i></th>
+            <th scope="col">Amount ($)</th>
+            <th scope="col">Deal</th>
+            <th scope="col">Account</th>
+            <th scope="col">Date</th>
+            <th scope="col">Amount ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">17/08/02 (12:58)</th>
+            <td>34,425.00 34,425.00</td>
+            <td>cpl(200)</td>
+            <td>bank</td>
+            <td>cpl(200)</td>
+            <td>bank</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <!-- Filtering tabs -->
+
+
+    <!-- Notifications -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
   </body>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
 </html>
