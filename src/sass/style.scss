@@ -5,7 +5,6 @@
 @import "layout";
 @import "global";
 @import "typography";
-@import "mediaQuery";
 
 /* Components */
 @import "components/buttons";
@@ -21,6 +20,9 @@
 
 /* Pages / Views */
 @import "pages/registration";
+
+/* Media query */
+@import "mediaQuery";
 
 // * {
 //   border: 1px solid red;

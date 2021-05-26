@@ -6,6 +6,7 @@
   background-color: $sidebar-dark-color;
   width: 190px;
   height: 100vh;
+  transition: $transition ease-in-out;
 
   > * {
     border-top: 1px solid $bg-dark-color;
@@ -30,8 +31,6 @@
 
   .menu-toggler {
     @include i-svg(20px, $base-text-color);
-    position: absolute;
-    left: 80%;
   }
 
   .sidebar-nav {
@@ -41,20 +40,15 @@
 
     li {
       @include flex(row, center, flex-start);
-      position: relative;
       height: 40px;
       margin: 0;
-      padding: 0 12px;
+      padding: 0 15px;
       transition: $transition ease-in-out;
       cursor: pointer;
       user-select: none;
 
       &.active { // has to be added by js
         background-color: rgba(255, 255, 255, 0.2);
-      }
-
-      .link-list-header {
-        position: absolute;
       }
 
     }
@@ -64,14 +58,7 @@
 
       i {
         padding-right: 14px;
-        position: relative;
-
       }
-    }
-
-    &.link- {
-      position: absolute;
-      
     }
 
     li:hover, li.active {
@@ -85,9 +72,14 @@
 
   .avatar-wrapper {
     @include flex(column, flex-start, center);
+    width: 100%;
     padding: 28px 12px;
     cursor: pointer;
     user-select: none;
+
+    .section-header {
+      transition: $transition ease-in-out;
+    }
 
     div {
       @include flex(row, center, space-between);
@@ -110,7 +102,7 @@
       content: '';
       display: inline-block;
       position: absolute;
-      top: 2px;
+      top: 0;
       right: 0;
       width: 10px;
       height: 10px;
@@ -120,6 +112,8 @@
   }
 
   .mobile-topbar-content { // on mobile display: flex
+    position: absolute;
+    bottom: 0;
     display: none;
   }
 }
