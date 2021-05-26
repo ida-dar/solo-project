@@ -85,6 +85,7 @@
 @mixin i-svg($size, $color) {
   font-size: $size;
   color: $color;
+  height: fit-content;
   display: inline-flex;
   cursor: pointer;
 }

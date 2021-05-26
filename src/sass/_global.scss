@@ -9,3 +9,16 @@ body {
   font-weight: $font-light;
   color: $base-text-color;
 }
+
+.main-container {
+  max-width: 1280px;
+  background-color: $highlight-light-color;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}

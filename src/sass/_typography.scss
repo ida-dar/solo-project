@@ -1,4 +1,4 @@
-section-header {
+.section-header {
   @include header($base-text-color, $base-font-size, $font-normal);
   text-transform: uppercase;
 }
@@ -9,4 +9,5 @@ section-header {
 
 .text {
   @include header($sidebar-dark-color, 14px, $font-light);
+  margin: 0;
 }
