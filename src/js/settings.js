@@ -1,6 +1,6 @@
 export const select = {
   containerOf: {
-    sidebar: '.navigation',
+    sidebar: '.column .navigation',
     topbar: '.topbar',
     datePicker: '.date-picker',
     walletDropdown: '.wallet-dropdown',

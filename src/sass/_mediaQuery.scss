@@ -1,6 +1,5 @@
 @media (max-width: 576px) {
   .navigation {
-    position: relative;
     width: 52px;
     overflow: hidden;
 
@@ -64,10 +63,5 @@
 
   #topbar {
     display: none;
-  }
-
-  .main-content-container {
-    top: 0;
-    width: calc(100% - 52px - 36px); // substract width of sidebar & margins
   }
 }

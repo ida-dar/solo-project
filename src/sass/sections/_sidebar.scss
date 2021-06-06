@@ -1,11 +1,16 @@
-.navigation {
-  position: absolute; // position absolute to relative main-container
+#sidebar {
+  position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
   background-color: $sidebar-dark-color;
+  height: 100%;
+}
+
+.navigation {
+  position: relative;
+  z-index: 2;
+  height: 100%;
   width: 190px;
-  height: 100vh;
   transition: $transition ease-in-out;
 
   > * {
@@ -79,7 +84,6 @@
 
     .section-header {
       transition: $transition ease-in-out;
-      margin-bottom: 18px;
     }
 
     div {

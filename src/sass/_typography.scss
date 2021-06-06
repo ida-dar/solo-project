@@ -1,12 +1,10 @@
 .section-header {
   @include header($base-text-color, $base-font-size, $font-normal);
   text-transform: uppercase;
-  margin: 0;
 }
 
 .subsection-header {
   @include header($base-text-color, $base-font-size, $font-normal);
-  margin: 0;
 }
 
 .text {

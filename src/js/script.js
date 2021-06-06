@@ -51,6 +51,7 @@ import DatePicker from './components/DatePicker.js';
     // eslint-disable-next-line no-unused-vars
     const datePicker = new DatePicker(datePickerContainer);
 
+
   };
 
   initActions();

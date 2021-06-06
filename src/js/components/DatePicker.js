@@ -33,6 +33,7 @@ class DatePicker extends BaseWidget{
       ],
       //altInput: true,
       plugins: [
+        // eslint-disable-next-line no-undef
         new rangePlugin({
           input: thisWidget.dom.inputEnd,
           placeholder: thisWidget.defaultDate})

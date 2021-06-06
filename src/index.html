@@ -17,52 +17,82 @@
   </head>
   <body>
     <div class="main-container">
-      <section id="sidebar">
-        <nav class="navigation">
-          <div class="logo-container">
-            <h1 class="logo">Just do it</h1>
-            <i class="fas fa-bars menu-toggler"></i>
-          </div>
-          <div class="sidebar-nav">
-            <ul class="list">
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-general"></i></div>
-                <a href="#" class="link link-large list-link-header">General</a>
-              </li>
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-details"></i></div>
-                <a href="#" class="link link-large list-link-header">Details</a>
-              </li>
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-links"></i></div>
-                <a href="#" class="link link-large list-link-header">Links</a>
-              </li>
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-banners"></i></div>
-                <a href="#" class="link link-large list-link-header">Banners</a>
-              </li>
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-personaldata"></i></div>
-                <a href="#" class="link link-large list-link-header">Personal data</a>
-              </li>
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-payout"></i></div>
-                <a href="#" class="link link-large list-link-header">Payout</a>
-              </li>
-              <li>
-                <div href="#" class="link icon-link"><i class="icon-postback"></i></div>
-                <a href="#" class="link link-large list-link-header">Postback</a>
-              </li>
-            </ul>
-          </div>
-          <div class="avatar-wrapper">
-            <h2 class="section-header">Your manager</h2>
-            <div>
-              <div class="avatar-img"><img src="images/profile-avatar.png" alt="profile-avatar"></div>
-              <a href="#" class="link link-large">Mikhael E.</a>
+      <div class="column column-left">
+        <section id="sidebar">
+          <nav class="navigation">
+            <div class="logo-container">
+              <h1 class="logo">Just do it</h1>
+              <i class="fas fa-bars menu-toggler"></i>
             </div>
-          </div>
-          <div class="mobile-topbar-content">
+            <div class="sidebar-nav">
+              <ul class="list">
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-general"></i></div>
+                  <a href="#" class="link link-large list-link-header">General</a>
+                </li>
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-details"></i></div>
+                  <a href="#" class="link link-large list-link-header">Details</a>
+                </li>
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-links"></i></div>
+                  <a href="#" class="link link-large list-link-header">Links</a>
+                </li>
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-banners"></i></div>
+                  <a href="#" class="link link-large list-link-header">Banners</a>
+                </li>
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-personaldata"></i></div>
+                  <a href="#" class="link link-large list-link-header">Personal data</a>
+                </li>
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-payout"></i></div>
+                  <a href="#" class="link link-large list-link-header">Payout</a>
+                </li>
+                <li>
+                  <div href="#" class="link icon-link"><i class="icon-postback"></i></div>
+                  <a href="#" class="link link-large list-link-header">Postback</a>
+                </li>
+              </ul>
+            </div>
+            <div class="avatar-wrapper">
+              <h2 class="section-header">Your manager</h2>
+              <div>
+                <div class="avatar-img"><img src="images/profile-avatar.png" alt="profile-avatar"></div>
+                <a href="#" class="link link-large">Mikhael E.</a>
+              </div>
+            </div>
+            <div class="mobile-topbar-content">
+              <div class="wallet-dropdown">
+                <div class="wallet-dropdown-header">
+                  <i class="icon-wallet icon-link__noncolor"></i>
+                  <h3 class="subsection-header">$1,500.00</h3>
+                  <i class="icon-arrow-down-small icon-link__small"></i>
+                </div>
+                <ul class="list one-digit-list wallet-list">
+                  <li><h3 class="list-header">CPA</h3><p class="text list-text">$1000</p></li>
+                  <li><h3 class="list-header">CPL</h3><p class="text list-text">$1100</p></li>
+                  <li><h3 class="list-header">Turnover</h3><p class="text list-text">$1030</p></li>
+                  <li><h3 class="list-header">Net deposit</h3><p class="text list-text">$1000</p></li>
+                </ul>
+              </div>
+              <div class="profile-container">
+                <a href="#" class="link link-small"><i class="icon-profile icon-link__noncolor"></i>Leonardo DiCaprio</a>
+              </div>
+              <div class="notification-icon-wrapper">
+                <i class="icon-notification icon-link__noncolor"></i>
+                <div>
+                  <i class="icon-quit icon-link__noncolor"></i>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </div>
+      <div class="column column-right">
+        <section id="topbar">
+          <header class="topbar">
             <div class="wallet-dropdown">
               <div class="wallet-dropdown-header">
                 <i class="icon-wallet icon-link__noncolor"></i>
@@ -76,159 +106,135 @@
                 <li><h3 class="list-header">Net deposit</h3><p class="text list-text">$1000</p></li>
               </ul>
             </div>
+            <div class="notification-icon-wrapper">
+              <i class="icon-notification icon-link__noncolor"></i>
+            </div>
             <div class="profile-container">
               <a href="#" class="link link-small"><i class="icon-profile icon-link__noncolor"></i>Leonardo DiCaprio</a>
             </div>
-            <div class="notification-icon-wrapper">
-              <i class="icon-notification icon-link__noncolor"></i>
-              <div>
-                <i class="icon-quit icon-link__noncolor"></i>
-              </div>
+            <div>
+              <i class="icon-quit icon-link__noncolor"></i>
             </div>
-          </div>
-        </nav>
-      </section>
-      <section id="topbar">
-        <header class="topbar">
-          <div class="wallet-dropdown">
-            <div class="wallet-dropdown-header">
-              <i class="icon-wallet icon-link__noncolor"></i>
-              <h3 class="subsection-header">$1,500.00</h3>
-              <i class="icon-arrow-down-small icon-link__small"></i>
-            </div>
-            <ul class="list one-digit-list wallet-list">
-              <li><h3 class="list-header">CPA</h3><p class="text list-text">$1000</p></li>
-              <li><h3 class="list-header">CPL</h3><p class="text list-text">$1100</p></li>
-              <li><h3 class="list-header">Turnover</h3><p class="text list-text">$1030</p></li>
-              <li><h3 class="list-header">Net deposit</h3><p class="text list-text">$1000</p></li>
-            </ul>
-          </div>
-          <div class="notification-icon-wrapper">
-            <i class="icon-notification icon-link__noncolor"></i>
-          </div>
-          <div class="profile-container">
-            <a href="#" class="link link-small"><i class="icon-profile icon-link__noncolor"></i>Leonardo DiCaprio</a>
-          </div>
-          <div>
-            <i class="icon-quit icon-link__noncolor"></i>
-          </div>
-        </header>
-      </section>
-      <main class="content-container">
-        <div class="container-fluid">
+          </header>
+        </section>
+        <main class="content-container">
           <section id="general">
-            <div class="section-header-container">
-              <h2 class="section-header">General statistics</h2>
-            </div>
-            <div class="date-picker">
-              <div class="input-container">
-                <label></label>
-                <input class="form-input" type="text" name="dateStart" placeholder="Select date">
-                <label></label>
-                <input class="form-input" type="text" name="dateEnd" placeholder="Select date">
-                <i class="icon-calendar icon-link__noncolor"></i>
+            <div class="container-fluid">
+              <div class="section-header-container">
+                <h2 class="section-header">General statistics</h2>
               </div>
-              <div class="btn btn-refresh icon-large-btn"><i class="icon-refresh"></i></div>
+              <div class="date-picker">
+                <div class="input-container">
+                  <label></label>
+                  <input class="form-input" type="text" name="dateStart" placeholder="Select date">
+                  <label></label>
+                  <input class="form-input" type="text" name="dateEnd" placeholder="Select date">
+                  <i class="icon-calendar icon-link__noncolor"></i>
+                </div>
+                <div class="btn btn-refresh icon-large-btn"><i class="icon-refresh"></i></div>
+              </div>
             </div>
           </section>
-        </div>
-        <div class="container-fluid">
           <section id="links">
-            <div class="section-header-container">
-              <h2 class="section-header">Links</h2>
+            <div class="container-fluid">
+              <div class="section-header-container">
+                <h2 class="section-header">Links</h2>
+              </div>
+              <div class="table-container__small table-responsive">
+                <button type="button" class="btn btn-default">+ add new</button>
+                <table class="table table__small">
+                  <thead></thead>
+                  <tbody>
+                    <tr>
+                      <th scope="col">Home page</th>
+                      <td><a href="#" class="link link-large">http://www.homepage.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Currently offer</th>
+                      <td><a href="#" class="link link-large">http://www.currently.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Blurpix</th>
+                      <td><a href="#" class="link link-large">http://www.blurpix.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Your site</th>
+                      <td><a href="#" class="link link-large">http://www.yoursite.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Google</th>
+                      <td><a href="#" class="link link-large">http://www.google.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Facebook</th>
+                      <td><a href="#" class="link link-large">http://www.facebook.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Dashboard</th>
+                      <td><a href="#" class="link link-large">http://www.dashboard.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Blurax</th>
+                      <td><a href="#" class="link link-large">http://www.blurax.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Piece of Wine</th>
+                      <td><a href="#" class="link link-large">http://www.pieceofwine.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="col">Twitter</th>
+                      <td><a href="#" class="link link-large">http://www.twitter.com</a></td>
+                      <td class="table-actions">
+                        <i class="icon-links icon-link__color"></i>
+                        <i class="icon-trash icon-link__noncolor"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button type="button" class="btn btn-default">+ add new</button>
+              </div>
             </div>
-            <div class="table-container__small table-responsive">
-              <button type="button" class="btn btn-default">+ add new</button>
-              <table class="table table__small">
-                <thead></thead>
-                <tbody>
-                  <tr>
-                    <th scope="col">Home page</th>
-                    <td><a href="#" class="link link-large">http://www.homepage.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Currently offer</th>
-                    <td><a href="#" class="link link-large">http://www.currently.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Blurpix</th>
-                    <td><a href="#" class="link link-large">http://www.blurpix.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Your site</th>
-                    <td><a href="#" class="link link-large">http://www.yoursite.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Google</th>
-                    <td><a href="#" class="link link-large">http://www.google.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Facebook</th>
-                    <td><a href="#" class="link link-large">http://www.facebook.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Dashboard</th>
-                    <td><a href="#" class="link link-large">http://www.dashboard.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Blurax</th>
-                    <td><a href="#" class="link link-large">http://www.blurax.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Piece of Wine</th>
-                    <td><a href="#" class="link link-large">http://www.pieceofwine.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="col">Twitter</th>
-                    <td><a href="#" class="link link-large">http://www.twitter.com</a></td>
-                    <td class="table-actions">
-                      <i class="icon-links icon-link__color"></i>
-                      <i class="icon-trash icon-link__noncolor"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <button type="button" class="btn btn-default">+ add new</button>
-            </div>
+            
           </section>
-        </div>
-      </main>
+        </main>
+
+      </div>
     </div>
 
 
