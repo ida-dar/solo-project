@@ -1,6 +1,7 @@
 .topbar {
   @include flex(row, center, flex-end);
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   height: 60px;

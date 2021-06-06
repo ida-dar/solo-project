@@ -1,0 +1,27 @@
+.date-picker {
+  @include flex(row, center, center);
+  height: 110px;
+  border-bottom: 1px solid $bg-light-color;
+
+  .input-container {
+    @include flex(row, center, flex-start);
+    border: 1px solid $bg-light-color;
+    border-radius: $radius;
+
+    label:nth-child(2){
+      height: 100%;
+      border: 1px solid $bg-light-color;
+    }
+
+    input {
+      padding: 0 18px;
+      border: none;
+      border-radius: 0;
+    }
+
+    .icon-calendar {
+      padding: 0 18px;
+    }
+
+  }
+}

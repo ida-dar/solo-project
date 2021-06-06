@@ -1,5 +1,9 @@
 .link {
   @include a($link-color);
+
+  &:hover {
+    color: $brand-main-color;
+  }
 }
 
 .link-large {
@@ -17,10 +21,18 @@
   
   &__color {
     @include i-svg($base-font-size, $brand-main-color);
+
+    &:hover {
+      color: $base-text-color;
+    }
   }
 
   &__noncolor {
     @include i-svg($base-font-size, $base-text-color);
+
+    &:hover {
+      color: $brand-main-color;
+    }
   }
 
   &__small {

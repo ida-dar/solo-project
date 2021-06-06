@@ -18,11 +18,32 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
+}
+
+.content-container {
+  position: absolute;
+  height: 100vh;
+  top: 60px;
+  right: 0;
+  margin: 18px;
+  width: calc(100% - 190px - 36px); // substract sidebar width & margin from both sides
 }
 
 .container-fluid {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
+  height: 100%;
+  margin-bottom: 18px;
+  text-align: center;
+  border: 1px solid $bg-light-color;
+  background-color: $highlight-text-color;
+  box-shadow: 5px 5px 10px $bg-light-color, -5px -5px 10px $bg-light-color;
+}
+
+.section-header-container {
+  @include flex(row, center, flex-start);
+  height: 48px;
+  border-bottom: 1px solid $bg-light-color;
+  margin: 0;
+  padding: 0 18px;
 }
