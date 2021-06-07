@@ -4,6 +4,8 @@ export const select = {
     topbar: '.topbar',
     datePicker: '.date-picker',
     walletDropdown: '.wallet-dropdown',
+    tableHeader: '.table__large thead th',
+    pagination: '.pagination',
   },
   sidebar: {
     menuToggler: '.logo-container',
@@ -13,6 +15,7 @@ export const select = {
     links: '.link',
     formInputs: 'input, select',
     pages: '.page',
+    listItems: 'li',
   },
   widgets: {
     amount: {
@@ -42,7 +45,12 @@ export const classNames = {
   walletDropdown: {
     active: 'active',
   },
-
+  table: {
+    active: 'active',
+  },
+  pagination: {
+    active: 'active',
+  },
 };
 
 export const settings = {

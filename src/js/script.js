@@ -27,7 +27,7 @@ import DatePicker from './components/DatePicker.js';
     event.preventDefault();
     const clickedElement = this;
     const pageLink = clickedElement.childNodes[3];
-    console.log(pageLink);
+    //console.log(pageLink);
 
     const navLinks = document.querySelectorAll(select.sidebar.listItem);
     //console.log(navLinks);
@@ -39,17 +39,17 @@ import DatePicker from './components/DatePicker.js';
     clickedElement.classList.add(classNames.sidebar.activeLink);
 
     const activePages = document.querySelectorAll(select.all.pages);
-    console.log(activePages);
+    //console.log(activePages);
 
     for(let activePage of activePages){
       activePage.classList.remove(classNames.sidebar.activeLink);
     }
 
     const pageSelector = pageLink.getAttribute('href');
-    console.log(pageSelector);
+    //console.log(pageSelector);
 
     const targetPage = document.querySelector(pageSelector);
-    console.log(targetPage);
+    //console.log(targetPage);
 
     targetPage.classList.add(classNames.sidebar.activeLink);
   };
@@ -196,5 +196,55 @@ import DatePicker from './components/DatePicker.js';
   };
 
   initChart();
+
+  const tableHeaderToggler = function(){
+    //TODO: add filtering of data table (e.g. smallest to largest)
+
+    const tableHeaderContainer = document.querySelectorAll(select.containerOf.tableHeader);
+
+    //console.log(tableHeaderContainer);
+
+    for(let tableHeader of tableHeaderContainer){
+      tableHeader.addEventListener('click', function(){
+        tableHeader.classList.toggle(classNames.table.active);
+      });
+    }
+
+  };
+
+  tableHeaderToggler();
+
+  const paginationActive = function(){
+    const paginationContainer = document.querySelector(select.containerOf.pagination);
+    //console.log(paginationContainer);
+
+    const pagLinks = paginationContainer.querySelectorAll(select.all.links);
+    //console.log(pagLinks);
+
+    for(let pagLink of pagLinks){
+      if(pagLink.tagName === 'A'){
+        
+        paginationContainer.addEventListener('click', function(event){
+          event.preventDefault();
+          
+          const clickedElement = event.target;
+          //console.log(clickedElement);
+          
+          if(clickedElement === pagLink && !pagLink.classList.contains(classNames.pagination.active)) {
+            clickedElement.classList.add(classNames.pagination.active);
+            
+          } else {
+            pagLink.classList.remove(classNames.pagination.active);
+            
+          }
+        });
+      }
+      
+    }
+
+    //TODO: add js for changing active link after clicking left/right arrow
+  };
+
+  paginationActive();
 
 }
