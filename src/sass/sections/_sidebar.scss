@@ -2,13 +2,13 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
   background-color: $sidebar-dark-color;
   height: 100%;
 }
 
 .navigation {
   position: relative;
-  z-index: 2;
   height: 100%;
   width: 190px;
   transition: $transition ease-in-out;

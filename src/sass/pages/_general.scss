@@ -14,6 +14,7 @@
     }
 
     input {
+      width: 150px;
       padding: 0 18px;
       border: none;
       border-radius: 0;
@@ -21,6 +22,44 @@
 
     .icon-calendar {
       padding: 0 18px;
+    }
+  }
+}
+
+.chart-list-container {
+  @include flex(row, center, center);
+  margin: 30px auto;
+  width: 684px;
+
+  ul {
+    @include flex(row, center, space-between);
+    flex-wrap: wrap;
+    width: 100%;
+
+    > * {
+      flex: 45% 0 0;
+      padding: 5px 0;
+    }
+  }
+}
+
+.chart-container {
+  height: fit-content;
+  width: 684px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.canvas-container {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+#links {
+  .table-container__small {
+    .table__small {
+      margin: 18px auto;
     }
 
   }

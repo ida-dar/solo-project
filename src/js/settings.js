@@ -7,9 +7,10 @@ export const select = {
   },
   sidebar: {
     menuToggler: '.logo-container',
+    listItem: '.sidebar-nav li',
   },
   all: {
-    links: 'link',
+    links: '.link',
     formInputs: 'input, select',
   },
   widgets: {
@@ -34,6 +35,7 @@ export const select = {
 export const classNames = {
   sidebar: {
     active: 'active',
+    activeLink: 'active',
   },
   walletDropdown: {
     active: 'active',

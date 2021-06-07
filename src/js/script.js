@@ -4,11 +4,11 @@ import DatePicker from './components/DatePicker.js';
 {
   'use strict';
 
-  const elementsToggler = function(){
+  const sidebarToggler = function(){
 
-    // Sidebar toggler for mobile
+    const sidebarContainer = document.querySelector(select.containerOf.sidebar);
+
     if(window.innerWidth <= 576) {
-      const sidebarContainer = document.querySelector(select.containerOf.sidebar);
       const menuToggler = sidebarContainer.querySelector(select.sidebar.menuToggler);
   
       menuToggler.addEventListener('click', function(event){
@@ -18,9 +18,25 @@ import DatePicker from './components/DatePicker.js';
       });
 
     }
+  };
+
+  sidebarToggler();
 
 
-    // Wallet dropdown toggler
+  const navPageLinks = function(){
+    
+    const navLinks = document.querySelectorAll(select.sidebar.listItem);
+
+    console.log(navLinks);
+
+    //TODO: finish clickHandler for pages and links
+  };
+
+  navPageLinks();
+
+
+  const walletDropdown = function(){
+
     const allWalletDropdown = document.querySelectorAll(select.containerOf.walletDropdown);
 
     for(let walletDropdown of allWalletDropdown){
@@ -42,7 +58,7 @@ import DatePicker from './components/DatePicker.js';
     }
   };
 
-  elementsToggler();
+  walletDropdown();
 
 
   const initActions = function(){
@@ -51,9 +67,102 @@ import DatePicker from './components/DatePicker.js';
     // eslint-disable-next-line no-unused-vars
     const datePicker = new DatePicker(datePickerContainer);
 
-
   };
 
   initActions();
+
+  const initChart = function(){
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var delayed;
+    // eslint-disable-next-line no-undef, no-unused-vars
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
+        datasets: [
+          {
+            label: 'Signups',
+            pointStyle: 'circle',
+            data: [350, 200, 220, 370, 410, 390, 290, 270, 295, 320],
+            backgroundColor: ['#56819f'],
+            borderColor: ['#56819f'],
+          },
+          {  
+            label: 'FTD',
+            data: [400, 170, 310, 240, 450, 110, 200, 500, 310, 300],
+            backgroundColor: ['#f58220'],
+            borderColor: ['#f58220'],
+          },
+          {  
+            label: 'Earned',
+            data: [350, 200, 220, 370, 450, 110, 200, 500, 270, 290],
+            backgroundColor: ['#04ae00'],
+            borderColor: ['#04ae00'],
+            hidden: true,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        layout: {
+          padding: {
+            bottom: 50,
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 600,
+          }
+        },
+        plugins: {
+          legend: {
+            display: true,
+            labels: {
+              usePointStyle: true,
+              pointStyle: 'circle',
+              padding: 20,
+              font:{
+                size: 14,
+                color: '#a6a6a6',
+                lineHeight: 1.7,
+              },
+            },
+          },
+          datalabels: {
+            listeners: {
+              enter: function(context) {
+                context.hovered = true;
+                return true;
+              },
+              leave: function(context) {
+                context.hovered = false;
+                return true;
+              },
+              click: function(context) {
+                context.backgroundColor === 'green';
+              }
+            }
+          }
+        },
+        animation: {
+          onComplete: () => {
+            delayed = true;
+          },
+          delay: (context) => {
+            let delay = 0;
+            if (context.type === 'data' && context.mode === 'default' && !delayed) {
+              delay = context.dataIndex * 150 + context.datasetIndex * 100;
+            }
+            return delay;
+          },
+        },
+      },
+    });
+  };
+
+  initChart();
 
 }

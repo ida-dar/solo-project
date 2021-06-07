@@ -4,7 +4,6 @@
 }
 
 .one-digit-list {
-  max-width: 310px;
 
   li {
     @include flex(row, center, space-between);
