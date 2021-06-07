@@ -5,7 +5,7 @@
 }
 
 .subsection-header {
-  @include header($base-text-color, $base-font-size, $font-normal);
+  @include header($base-text-color, $base-font-size, $font-bold);
 }
 
 .text {
