@@ -12,6 +12,7 @@ export const select = {
   all: {
     links: '.link',
     formInputs: 'input, select',
+    pages: '.page',
   },
   widgets: {
     amount: {
@@ -23,6 +24,7 @@ export const select = {
       wrapper: '.date-picker .input-container',
       inputStart: `input[name="dateStart"]`,
       inputEnd: `input[name="dateEnd"]`,
+      clearButton: '.clear_button',
     },
     hourPicker: {
       wrapper: '.hour-picker',

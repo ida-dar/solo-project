@@ -17,7 +17,6 @@ body {
   border-right: 1px solid $bg-light-color;
   margin: 0 auto;
   padding: 0;
-  //position: relative;
 }
 
 .column {
@@ -53,4 +52,11 @@ body {
   border-bottom: 1px solid $bg-light-color;
   margin: 0;
   padding: 0 18px;
+}
+
+.page {
+  display: none;
+  &.active {
+    display: block;
+  }
 }

@@ -26,33 +26,33 @@
             </div>
             <div class="sidebar-nav">
               <ul class="list">
-                <li>
+                <li class="active">
                   <div href="#" class="link icon-link"><i class="icon-general"></i></div>
-                  <a href="#" class="link link-large list-link-header">General</a>
+                  <a href="#general" class="link link-large list-link-header">General</a>
                 </li>
                 <li>
                   <div href="#" class="link icon-link"><i class="icon-details"></i></div>
-                  <a href="#" class="link link-large list-link-header">Details</a>
+                  <a href="#details" class="link link-large list-link-header">Details</a>
                 </li>
                 <li>
                   <div href="#" class="link icon-link"><i class="icon-links"></i></div>
-                  <a href="#" class="link link-large list-link-header">Links</a>
+                  <a href="#links" class="link link-large list-link-header">Links</a>
                 </li>
                 <li>
                   <div href="#" class="link icon-link"><i class="icon-banners"></i></div>
-                  <a href="#" class="link link-large list-link-header">Banners</a>
+                  <a href="#banners" class="link link-large list-link-header">Banners</a>
                 </li>
                 <li>
                   <div href="#" class="link icon-link"><i class="icon-personaldata"></i></div>
-                  <a href="#" class="link link-large list-link-header">Personal data</a>
+                  <a href="#personal-data" class="link link-large list-link-header">Personal data</a>
                 </li>
                 <li>
                   <div href="#" class="link icon-link"><i class="icon-payout"></i></div>
-                  <a href="#" class="link link-large list-link-header">Payout</a>
+                  <a href="#payout" class="link link-large list-link-header">Payout</a>
                 </li>
                 <li>
                   <div href="#" class="link icon-link"><i class="icon-postback"></i></div>
-                  <a href="#" class="link link-large list-link-header">Postback</a>
+                  <a href="#postback" class="link link-large list-link-header">Postback</a>
                 </li>
               </ul>
             </div>
@@ -118,21 +118,21 @@
           </header>
         </section>
         <main class="content-container">
-          <section id="general">
+          <section id="general" class="page active">
             <div class="container-fluid">
               <div class="section-header-container">
                 <h2 class="section-header">General statistics</h2>
               </div>
-              <div class="date-picker">
+              <form class="date-picker flatpickr">
                 <div class="input-container">
                   <label></label>
-                  <input class="form-input" type="text" name="dateStart" placeholder="Select date">
+                  <input class="form-input flatpickr-input" type="text" name="dateStart" placeholder="Select date" data-input="">
                   <label></label>
-                  <input class="form-input" type="text" name="dateEnd" placeholder="Select date">
+                  <input class="form-input flatpickr-input" type="text" name="dateEnd" placeholder="Select date" data-input="">
                   <i class="icon-calendar icon-link__noncolor"></i>
                 </div>
-                <div class="btn btn-refresh icon-large-btn"><i class="icon-refresh"></i></div>
-              </div>
+                <div class="btn btn-refresh icon-large-btn input-button" title="clear" data-clear=""><i class="icon-refresh"></i></div>
+              </form>
               <div class="chart-list-container">
                 <ul class="list one-digit-list">
                   <li><h3 class="list-header">Visit Signups</h3><p class="list-text">124</p></li>
@@ -149,7 +149,7 @@
               </div>
             </div>
           </section>
-          <section id="links">
+          <section id="links" class="page active">
             <div class="container-fluid">
               <div class="section-header-container">
                 <h2 class="section-header">Links</h2>
