@@ -90,6 +90,7 @@
     ul {
       @include flex(column, center, center);
     }
+
     ul > * {
       width: 45%;
     }
@@ -110,6 +111,7 @@
       height: 100px;
       border-bottom: 1px solid $bg-light-color;
     }
+    
     tr th, tr td {
       flex: 1;
       border: none;

@@ -93,10 +93,13 @@ import DatePicker from './components/DatePicker.js';
 
 
   const initActions = function(){
-    const datePickerContainer = document.querySelector(select.widgets.datePicker.wrapper);
+    const datePickerContainer = document.querySelectorAll(select.widgets.datePicker.wrapper);
 
-    // eslint-disable-next-line no-unused-vars
-    const datePicker = new DatePicker(datePickerContainer);
+    for(let datePicker of datePickerContainer){
+      // eslint-disable-next-line no-unused-vars
+      const datePickerInstance = new DatePicker(datePicker);
+
+    }
 
   };
 
