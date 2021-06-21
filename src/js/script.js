@@ -250,4 +250,28 @@ import DatePicker from './components/DatePicker.js';
 
   paginationActive();
 
+  function showPassword() {
+
+    const togglePassword = document.querySelector('#togglePassword');
+    const passwordInputOne = document.querySelector('#password1');
+    const passwordInputTwo = document.querySelector('#password2');
+    console.log(togglePassword, passwordInputOne, passwordInputTwo);
+
+    togglePassword.addEventListener('click', function () {
+      // toggle the type attribute
+      const typeOne = passwordInputOne.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInputOne.setAttribute('type', typeOne);
+
+      const typeTwo = passwordInputTwo.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordInputTwo.setAttribute('type', typeTwo);
+      // toggle the eye / eye slash icon
+      this.classList.toggle('fa-eye-slash');
+      this.classList.toggle('fa-eye');
+    });
+
+    
+  }
+
+  showPassword();
+
 }
