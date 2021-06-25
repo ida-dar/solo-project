@@ -1,5 +1,6 @@
 import { classNames, select } from './settings.js';
 import DatePicker from './components/DatePicker.js';
+import HourPicker from './components/HourPicker.js';
 
 {
   'use strict';
@@ -27,10 +28,10 @@ import DatePicker from './components/DatePicker.js';
     event.preventDefault();
     const clickedElement = this;
     const pageLink = clickedElement.childNodes[3];
-    //console.log(pageLink);
+    console.log(pageLink);
 
     const navLinks = document.querySelectorAll(select.sidebar.listItem);
-    //console.log(navLinks);
+    console.log(navLinks);
 
     for(let navLink of navLinks){
       navLink.classList.remove(classNames.sidebar.activeLink);
@@ -39,17 +40,17 @@ import DatePicker from './components/DatePicker.js';
     clickedElement.classList.add(classNames.sidebar.activeLink);
 
     const activePages = document.querySelectorAll(select.all.pages);
-    //console.log(activePages);
+    console.log(activePages);
 
     for(let activePage of activePages){
       activePage.classList.remove(classNames.sidebar.activeLink);
     }
 
     const pageSelector = pageLink.getAttribute('href');
-    //console.log(pageSelector);
+    console.log(pageSelector);
 
     const targetPage = document.querySelector(pageSelector);
-    //console.log(targetPage);
+    console.log(targetPage);
 
     targetPage.classList.add(classNames.sidebar.activeLink);
   };
@@ -100,6 +101,10 @@ import DatePicker from './components/DatePicker.js';
       const datePickerInstance = new DatePicker(datePicker);
 
     }
+
+    const hourPickerContainer = document.querySelector(select.widgets.hourPicker.wrapper);
+    // eslint-disable-next-line no-unused-vars
+    const hourPicker = new HourPicker(hourPickerContainer);
 
   };
 
@@ -219,11 +224,11 @@ import DatePicker from './components/DatePicker.js';
 
   const paginationActive = function(){
     const paginationContainer = document.querySelectorAll(select.containerOf.pagination);
-    console.log(paginationContainer);
+    //console.log(paginationContainer);
 
     for (let container of paginationContainer){
       const pagLinks = container.querySelectorAll(select.all.links);
-      console.log(pagLinks);
+      //console.log(pagLinks);
 
       for(let pagLink of pagLinks){
         if(pagLink.tagName === 'A'){

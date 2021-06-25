@@ -63,6 +63,10 @@ export const settings = {
     minDaysInPast: 60,
     maxDaysInFuture: 14,
   },
+  hours: {
+    initialValue: 104,
+    maxValue: 168,
+  },
   db: {
     url: '//localhost:3131',
   },

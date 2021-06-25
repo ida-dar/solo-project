@@ -14,14 +14,13 @@
 @import "components/formElements";
 
 /* Sections */
-@import "sections/registration_form";
 @import "sections/topbar";
 @import "sections/sidebar";
 
 /* Pages / Views */
-@import "pages/registration";
 @import "pages/general";
 @import "pages/details";
+@import "pages/postback";
 
 /* Media query */
 @import "mediaQuery";

@@ -50,10 +50,14 @@ form {
     }
 
   }
+
+  textarea.form-input {
+    min-height: 100px;
+  }
 }
 
 select {
-  width: 330px;
+  width: 320px;
   height: 40px;
   border-radius: $radius;
   border: 1px solid $bg-light-color;
@@ -68,7 +72,7 @@ select {
 
 .checkbox-list .list li {
   @include flex(row, center, space-between);
-  max-width: 320px;
+  width: 320px;
   height: 40px;
 
   .icon-link {
@@ -92,6 +96,7 @@ select {
   padding-left: ($base-size * 4);
   //margin-bottom: $base-size;
   user-select: none;
+  width: 450px;
   height: 100%;
   cursor: pointer;
   color: $sidebar-dark-color;
