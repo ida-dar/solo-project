@@ -1,8 +1,11 @@
+#topbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .topbar {
   @include flex(row, center, flex-end);
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 60px;
   width: 100%;
   background-color: $highlight-text-color;

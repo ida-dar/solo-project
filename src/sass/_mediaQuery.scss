@@ -1,6 +1,5 @@
 @media (max-width: 576px) {
   .navigation {
-    position: relative;
     width: 52px;
     overflow: hidden;
 
@@ -64,5 +63,58 @@
 
   #topbar {
     display: none;
+  }
+
+  .page {
+    margin: 0 auto;
+    width: 400px;
+    overflow-x: scroll;
+  }
+
+  .date-picker {
+    @include flex(column, center, center);
+    height: fit-content;
+
+    .input-container {
+      @include flex(column, center, flex-start);
+    }
+
+    .icon-calendar {
+      display: none;
+    }
+  }
+
+  .chart-list-container {
+    width: 100%;
+    
+    ul {
+      @include flex(column, center, center);
+    }
+
+    ul > * {
+      width: 45%;
+    }
+  }
+  
+  .chart-container {
+    width: 390px;
+    overflow-x: scroll;
+  }
+
+  .table-container__small {
+    max-width: 400px;
+  }
+
+  .table__small {
+    tr {
+      @include flex(column, space-between, space-between);
+      height: 100px;
+      border-bottom: 1px solid $bg-light-color;
+    }
+    
+    tr th, tr td {
+      flex: 1;
+      border: none;
+    }
   }
 }

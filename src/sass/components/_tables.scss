@@ -1,18 +1,24 @@
 .table-container {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+
   &__small {
     max-width: 684px;
     margin: 24px auto;
   }
 
   &__large {
-    max-width: 1020px;
-    margin: 18px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 18px auto;
   }
 
 }
 
 .table__small {
   width: 100%;
+  margin: 18px auto;
   border-top: 1px solid $bg-light-color;
 
   tr {
@@ -38,7 +44,7 @@
     th {
       font-weight: $font-normal;
       color: $base-text-color;
-      flex: 3.5;
+      flex: 3;
     }
   
     td {
@@ -64,23 +70,50 @@
 
 .table__large {
   width: 100%;
+  vertical-align: middle;
 
-  thead {
-    color: $base-text-color;
-    font-weight: $font-normal;
-  }
-
-  tbody {
-    color: $sidebar-dark-color;
-
-    th, td {
-      font-weight: $font-light;
-    }
-
+  i {
+    visibility: hidden;
   }
 
   th, td {
     min-width: 30px;
     width: fit-content;
+  }
+
+  thead {
+    color: $base-text-color;
+    font-weight: $font-normal;
+  }
+  
+  thead tr th {
+    cursor: pointer;
+    user-select: none;
+
+    &:hover, &.active {
+      background-color: $highlight-light-color;
+      border-radius: $radius;
+    }
+  }
+
+  thead tr th:hover, thead tr th.active {
+    i {
+      visibility: visible;
+    }
+  }
+  
+  tbody {
+    color: $sidebar-dark-color;
+    
+    th, td {
+      height: 60px;
+      font-weight: $font-light;
+    }
+  }
+}
+
+.table__large tbody tr {
+  &:hover {
+    background-color: $highlight-light-color;
   }
 }

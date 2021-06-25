@@ -1,11 +1,16 @@
-.navigation {
-  position: absolute; // position absolute to relative main-container
+#sidebar {
+  position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: $sidebar-dark-color;
-  width: 190px;
   height: 100vh;
+}
+
+.navigation {
+  position: relative;
+  height: 100%;
+  width: 190px;
   transition: $transition ease-in-out;
 
   > * {
