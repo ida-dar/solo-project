@@ -59,19 +59,9 @@ export const settings = {
     defaultMin: 1,
     defaultMax: 9,
   },
-  cart: {
-    defaultDeliveryFee: 20,
-  },
-  hours: {
-    open: 12,
-    close: 24,
-  },
   datePicker: {
     minDaysInPast: 60,
     maxDaysInFuture: 14,
-  },
-  booking: {
-    tableIdAttribute: 'data-table',
   },
   db: {
     url: '//localhost:3131',

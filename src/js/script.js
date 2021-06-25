@@ -218,31 +218,32 @@ import DatePicker from './components/DatePicker.js';
   tableHeaderToggler();
 
   const paginationActive = function(){
-    const paginationContainer = document.querySelector(select.containerOf.pagination);
-    //console.log(paginationContainer);
+    const paginationContainer = document.querySelectorAll(select.containerOf.pagination);
+    console.log(paginationContainer);
 
-    const pagLinks = paginationContainer.querySelectorAll(select.all.links);
-    //console.log(pagLinks);
+    for (let container of paginationContainer){
+      const pagLinks = container.querySelectorAll(select.all.links);
+      console.log(pagLinks);
 
-    for(let pagLink of pagLinks){
-      if(pagLink.tagName === 'A'){
-        
-        paginationContainer.addEventListener('click', function(event){
-          event.preventDefault();
+      for(let pagLink of pagLinks){
+        if(pagLink.tagName === 'A'){
           
-          const clickedElement = event.target;
-          //console.log(clickedElement);
-          
-          if(clickedElement === pagLink && !pagLink.classList.contains(classNames.pagination.active)) {
-            clickedElement.classList.add(classNames.pagination.active);
-            
-          } else {
-            pagLink.classList.remove(classNames.pagination.active);
-            
-          }
-        });
+          container.addEventListener('click', function(event){
+            event.preventDefault();
+              
+            const clickedElement = event.target;
+            //console.log(clickedElement);
+              
+            if(clickedElement === pagLink && !pagLink.classList.contains(classNames.pagination.active)) {
+              clickedElement.classList.add(classNames.pagination.active);
+                
+            } else {
+              pagLink.classList.remove(classNames.pagination.active);
+                
+            }
+          });
+        }
       }
-      
     }
 
     //TODO: add js for changing active link after clicking left/right arrow
@@ -255,7 +256,7 @@ import DatePicker from './components/DatePicker.js';
     const togglePassword = document.querySelector('#togglePassword');
     const passwordInputOne = document.querySelector('#password1');
     const passwordInputTwo = document.querySelector('#passwordRepeat');
-    console.log(togglePassword, passwordInputOne, passwordInputTwo);
+    //console.log(togglePassword, passwordInputOne, passwordInputTwo);
 
     togglePassword.addEventListener('click', function () {
       // toggle the type attribute
