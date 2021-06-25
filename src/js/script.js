@@ -275,7 +275,6 @@ import HourPicker from './components/HourPicker.js';
       this.classList.toggle('fa-eye');
     });
 
-    
   }
 
   showPassword();
