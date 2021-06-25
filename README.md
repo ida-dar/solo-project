@@ -1,2 +1,1 @@
-# solo-project
-Administration panel for banner and link management system
+https://ida-dar.github.io/solo-project/
