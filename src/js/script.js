@@ -254,7 +254,7 @@ import DatePicker from './components/DatePicker.js';
 
     const togglePassword = document.querySelector('#togglePassword');
     const passwordInputOne = document.querySelector('#password1');
-    const passwordInputTwo = document.querySelector('#password2');
+    const passwordInputTwo = document.querySelector('#passwordRepeat');
     console.log(togglePassword, passwordInputOne, passwordInputTwo);
 
     togglePassword.addEventListener('click', function () {
