@@ -28,10 +28,10 @@ import HourPicker from './components/HourPicker.js';
     event.preventDefault();
     const clickedElement = this;
     const pageLink = clickedElement.childNodes[3];
-    console.log(pageLink);
+    //console.log(pageLink);
 
     const navLinks = document.querySelectorAll(select.sidebar.listItem);
-    console.log(navLinks);
+    //console.log(navLinks);
 
     for(let navLink of navLinks){
       navLink.classList.remove(classNames.sidebar.activeLink);
@@ -40,17 +40,17 @@ import HourPicker from './components/HourPicker.js';
     clickedElement.classList.add(classNames.sidebar.activeLink);
 
     const activePages = document.querySelectorAll(select.all.pages);
-    console.log(activePages);
+    //console.log(activePages);
 
     for(let activePage of activePages){
       activePage.classList.remove(classNames.sidebar.activeLink);
     }
 
     const pageSelector = pageLink.getAttribute('href');
-    console.log(pageSelector);
+    //console.log(pageSelector);
 
     const targetPage = document.querySelector(pageSelector);
-    console.log(targetPage);
+    //console.log(targetPage);
 
     targetPage.classList.add(classNames.sidebar.activeLink);
   };
