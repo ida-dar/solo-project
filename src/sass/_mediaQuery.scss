@@ -1,4 +1,8 @@
 @media (max-width: 576px) {
+  .main-container {
+    width: 450px;
+  }
+
   .navigation {
     width: 52px;
     overflow: hidden;
@@ -67,7 +71,7 @@
 
   .page {
     margin: 0 auto;
-    width: 400px;
+    width: 100%;
     overflow-x: scroll;
   }
 
@@ -115,6 +119,30 @@
     tr th, tr td {
       flex: 1;
       border: none;
+    }
+  }
+
+  .form-wrapper {
+    margin: auto 10px;
+  }
+
+  .text-parameters {
+    @include flex(column, center, space-between);
+
+    .input-container {
+      width: 320px;
+    }
+  }
+
+  .input-parameters {
+    @include flex(column, center, space-between);
+  }
+
+  .send-container-data {
+    @include flex(column, center, space-around);
+
+    .send-time-range {
+      width: 320px;
     }
   }
 }
