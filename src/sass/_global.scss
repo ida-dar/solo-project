@@ -33,6 +33,7 @@ body {
 }
 
 .content-container {
+  width: calc(100% - 36px);
   height: 100%;
   margin: 18px;
 }

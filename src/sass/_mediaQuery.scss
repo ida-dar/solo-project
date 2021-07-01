@@ -1,6 +1,6 @@
 @media (max-width: 576px) {
   .main-container {
-    width: 450px;
+    overflow: hidden;
   }
 
   .navigation {
@@ -27,6 +27,13 @@
     .avatar-wrapper .avatar-img img {
       height: 30px;
       width: 30px;
+    }
+
+    .avatar-wrapper .avatar-img::before {
+      top: -2px;
+      width: 8px;
+      height: 8px;
+
     }
 
     &.active {
@@ -69,6 +76,10 @@
     display: none;
   }
 
+  .content-container {
+    width: calc(100vw - 36px - 52px);
+  }
+
   .page {
     margin: 0 auto;
     width: 100%;
@@ -101,8 +112,8 @@
   }
   
   .chart-container {
-    width: 390px;
-    overflow-x: scroll;
+    width: 100%;
+    overflow: scroll;
   }
 
   .table-container__small {
@@ -121,28 +132,48 @@
       border: none;
     }
   }
-
+  
+  
   .form-wrapper {
     margin: auto 10px;
+    
+    .input-container {
+      width: 275px;
+    }
+
+    .input-container .form-input {
+      width: 180px;
+    }
   }
 
   .text-parameters {
     @include flex(column, center, space-between);
 
     .input-container {
-      width: 320px;
+      width: 275px;
     }
   }
 
   .input-parameters {
     @include flex(column, center, space-between);
+    width: 300px;
+
+    .select-container select {
+      width: 275px;
+
+    }
   }
 
   .send-container-data {
     @include flex(column, center, space-around);
+    width: 300px;
+
+    .checkbox-list {
+      width: 275px;
+    }
 
     .send-time-range {
-      width: 320px;
+      width: 275px;
     }
   }
 }
